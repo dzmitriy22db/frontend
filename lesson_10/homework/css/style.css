@@ -11,7 +11,12 @@ input{
 }
 ul{
     list-style: none;
+    
 }
 button{
     margin: 28px;
+}
+textarea{
+    width: 59em;
+    height: 20em;
 }

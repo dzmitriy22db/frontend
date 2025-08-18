@@ -8,49 +8,57 @@
 </head>
 <body>
     <h1>Форма обратной связи</h1>
-    <form action="#" method="get">
+    <form action="#" method="post">
         <fieldset>
         <legend>Как с вами связаться</legend>
+
         <label for="name">Ваше имя</label>
-        <input type="text" name="Ваше имя" id="name"><br>
+        <input type="text" name="name" id="name" placeholder="Введите имя"><br>
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email"><br>
+        <input type="email" name="email" id="email" placeholder="mail@mail.com"><br>
 
-        <label for="telefon">Телефон</label>
-        <input type="telefon" name="telefon" id="telefon"><br>
-       
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel" placeholder="+49 299920002"><br>
+       <fieldset>
 
-         <fieldset>
         <legend>Данный контракта</legend>
-        <label for="data">Дата</label>
-        <input type="data" name="data" id="data"><br>
+        <label for="date">Дата</label>
+        <input type="date" name="date" id="date"><br>
 
         <label for="number">Номер</label>
-        <input type="number" name="number" id="number"><br>
-       
-
-      </fieldset>
+        <input type="number" name="number" id="number" placeholder="Введите номер"><br>
        </fieldset>
-       <label>Оцените наш сервис:</label>
-       <ul>
-        <li><input type="radio" name="" value=""> Хорошо
-        <input type="radio" name="" value=""> Удовлетворительно
-        <input type="radio" name="" value=""> Плохо</li>
-       </ul>
-
-        <label>Как часто используете наш сервис:</label>
-          <ul>
-        <li><input type="radio" name="" value=""> Первый раз
-        <input type="radio" name="" value=""> Иногда
-        <input type="radio" name="" value=""> Часто</li>
-       </ul>
        
-        <label for="name">Сообщение:</label>
-        <input type="text" name="Ваше имя" id="name"><br>
+       <fieldset>
+       <legend>Оцените наш сервис:</legend>
+      
+        <input type="radio" id="good" name="service" value="good"> 
+        <label for="good">Хорошо</label>
+
+        <input type="radio" id="normal" name="service" value="normal"> 
+        <label for="normal">Удовлетворительно</label>
+
+        <input type="radio" id="bad" name="service" value="bad"> 
+        <label for="bad">Плохо</label><br>
+      </fieldset>
+
+        <label>Как часто используете наш сервис:</label><br>
+          
+        <input type="radio" id="first" name="frequency" value="first"> 
+        <label for="first">Первый раз</label>
+        <input type="radio" id="sometimes" name="frequency" value="sometimes"> 
+        <label for="sometimes">Иногда</label>
+        <input type="radio" id="often" name="frequency" value="often"> 
+        <label for="often">Часто</label><br>
+       
+       
+        <label for="message">Сообщение:</label>
+       <textarea name="message" id="message" placeholder="Напишите ваше сообщение..."></textarea>
 
         <fieldset>
-            <li><input type="radio">  Даю согласие</li>
+            <input type="checkbox" id="agreement" name="agreement"> 
+            <label for="agreement">Даю согласие</label> 
         </fieldset>
 
 
