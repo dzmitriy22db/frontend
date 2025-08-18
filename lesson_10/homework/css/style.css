@@ -1,0 +1,17 @@
+*{
+    margin: 10px;
+    
+}
+body{
+    background-color: aquamarine;
+}
+input{
+    margin: 7px;
+    
+}
+ul{
+    list-style: none;
+}
+button{
+    margin: 28px;
+}
